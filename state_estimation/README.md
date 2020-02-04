@@ -20,7 +20,7 @@ you will need to do the following to test the project.
 
 * Run: roscore.
 * play the bag file attached with the project files as follows: rosbag play FILE_NAME.
-* In another terminal, run: rosrun state_estimation pa2.py.
+* In another terminal, run: rosrun state_estimation state_estimation.py.
 * In a new terminal, run: rosrun image_transport republish compressed in:=/camera/depth/image_raw/compressed raw out:=/camera/depth/image_raw/ while playing the bag file to decompress the /camera/depth/image_raw/compressed topic.
 * In case you need to get the LaserScan readings from the camera depth instead of the LIDAR, you have to run: rosrun depthimage_to_laserscan depthimage_to_laserscan
 * Finally, run: rqt_tf_tree rqt_tf_tree to get the transformation between odom_kf frame and base_footprint frame.
